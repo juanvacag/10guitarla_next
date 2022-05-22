@@ -1,0 +1,20 @@
+                    STRAPI
+------------------------------------------------
+
+Es un CMS Headless
+
+Te permite crear AP`s dinamicas con respuesta JSON o GraphQL
+
+Si necesitas personalizar algo en Strapi puedes hacerlo con codigo javascript(node.js)
+
+Se pueden extender con el uso de plugins
+
+desde una nueva terminal C:\Users\vacag\Desktop\mis.cursos\react\codigoConJuan> teclear
+
+npx create-strapi-app@3.6.8
+
+despues de crear la aplicacion en nuestro caso 10guitarla_strapi
+
+cd 10guitarla_strapi
+
+npm run develop

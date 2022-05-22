@@ -1,0 +1,12 @@
+Next.js ofece tres formas de obtener datos de una API.
+
+getStaticProps - obtener los datos cuando se crea el build.
+
+getStaticPaths - obtener el listado de las paginas que se van a crear cuando se realiza el build.
+
+getServerSideProps - los datos de obtienen en cada request.
+
+Utiliza StaticProps cuando la informacion no cambia en cada request:
+    una pagina informativa, documentacion, tramites, anuncios. 
+
+Utiliza ServerSideProps cuando la informacion cambia de forma continua en cada request o donde la pagina se actualiza cada poco tiempo.

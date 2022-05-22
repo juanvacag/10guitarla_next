@@ -1,0 +1,17 @@
+next.js es un framework  hecho en react para la creación de sitios y aplicaciones.
+
+Cuenta con una gran cantidad de caracteriticas muy utiles para crear aplicaciones de gran perfomance, SEO y facilidad de configuración.
+
+El codigo corre tanto en el servidor cpmp en el cliente (navegador).
+
+Soporta Server Side Rendering (SRR) y Static Site Generation (SSG)
+
+Una de sus grandes ventajas es que no requiere configuración
+
+Gran perfomance y optimizado para SEO
+
+Routing incluido
+
+Tiene funciones para obtener datos de una API como getServerSideProps y getStaticProps
+
+El codigo sigue siendo de React; componentes, hooks, etc.

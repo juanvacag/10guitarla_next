@@ -1,0 +1,16 @@
+.contenido {
+    display: grid;
+    gap: 4rem;
+}
+@media (min-width:768px) {
+    .contenido {
+        grid-template-columns: repeat(2, 1fr);
+        align-items:flex-start;
+    }
+}
+
+.tjustificado {
+    text-align: justify;
+    padding: 1rem;
+    margin-top: -1.5rem;
+}
