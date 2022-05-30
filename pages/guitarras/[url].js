@@ -1,13 +1,30 @@
-import { useState } from 'react'
-import Image from 'next/image'
-import Layout from '../../components/Layout'
-import styles from '../../styles/Guitarra.module.css'
+import { useState } from 'react';
+import Image from 'next/image';
+import Layout from '../../components/Layout';
+import styles from '../../styles/Guitarra.module.css';
 
-const Producto = ({guitarra}) => {
-    const [cantidad, setCantidad] = useState(1);
+const Producto = ({guitarra, agregarCarrito}) => {
 
-    const {descripcion, imagen, nombre, precio} = guitarra[0];
+    const [cantidad, setCantidad] = useState(1)
+    const {descripcion, imagen, nombre, precio, id} = guitarra[0];
 
+    const handleSubmit = e => {
+        e.preventDefault();
+
+        if(cantidad < 1) {
+            alert('Cantidad no válida')
+            return
+        }
+        //agregarlo al carrito
+        const guitarraSeleccionda = {
+            id,
+            imagen: imagen.url,
+            nombre,
+            precio,
+            cantidad
+        };
+        agregarCarrito(guitarraSeleccionda)
+    };
   return (
       <Layout
         pagina={`Guitarra ${nombre}`}
@@ -18,6 +35,7 @@ const Producto = ({guitarra}) => {
                     <h3>{nombre}</h3>
                     <p className={styles.descripcion}>{descripcion}</p>
                     <p className={styles.precio}>${precio}</p>
+
                     <form className={styles.formulario} onSubmit={handleSubmit}>
                         <label>Cantidad:</label>
                         <select

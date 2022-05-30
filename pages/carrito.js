@@ -3,8 +3,6 @@ import Layout from '../components/Layout'
 import styles from '../styles/Carrito.module.css'
 const Carrito = ({carrito}) => {
 
-  //console.log(carrito)
-
   const [productos, setProductos] = useState([]);
   return (
     <Layout pagina={'Carrito de Conpras'}>
