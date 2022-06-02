@@ -40,7 +40,8 @@ const Producto = ({guitarra, agregarCarrito}) => {
                         <label>Cantidad:</label>
                         <select
                             value={cantidad}
-                            onChange={e => setCantidad(parseInt(e.target.value))}
+                            className={styles.select}
+                            onChange={(e) => setCantidad(parseInt(e.target.value))}
                         >
                             <option value="0">-- Seleccione Cantidad --</option>
                             <option value="1">1</option>
